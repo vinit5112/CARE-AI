@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seizure Detection App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="home">
+    <div class="navbar">
+        <div class="container1">
+            <h3 class="logo">SEIZURE DETECTION</h3>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#Team">Team</a>
+                <a href="#Team">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <form action="/predict" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="excel_file">
+            <button type="submit" class="predict-button">Predict</button>
+            <button type="button" class="restart-button" name="restart">Restart</button>
+        </form>
+        
+        
+        {% if result %}
+        <p class="result">Prediction Result: {{ result }}</p>
+        {% endif %}
+    </div>
+    <div id="about" class="section1">
+        <div class="container3">
+            <div>
+                <h2>About Seizure Detection Project</h2>
+                <p>
+                    The Seizure Detection Project aims to improve the early detection and monitoring of epileptic seizures
+                    using advanced machine learning algorithms. By analyzing EEG data, our project identifies patterns
+                    indicative of seizures, providing valuable insights for both patients and healthcare professionals.
+                </p>
+                <p>
+                    Objective: To develop an innovative solution for early detection and monitoring of epileptic seizures using advanced machine learning algorithms and EEG data analysis.
+                </p>
+                <p>
+                    The Seizure Detection Project is a groundbreaking initiative that leverages cutting-edge technology to improve the quality of life for individuals with epilepsy.
+                </p>
+                <p>
+                    By analyzing EEG (Electroencephalogram) data, our system detects patterns indicative of epileptic seizures, enabling early intervention and better management of the condition. This project aims to provide accurate, real-time seizure detection, enhancing the safety and well-being of epilepsy patients.
+                </p>
+                <h2>How to use?</h2>
+                <p>
+                    EEG data is collected from sensors placed on the scalp of the patient. These sensors record electrical activity in the brain.Relevant features are extracted from the preprocessed EEG data. These features serve as input for the machine learning algorithms.Upload input data file.
+                </p>
+                <p>
+                    The extracted features are fed into machine learning models, which have been trained to recognize patterns associated with seizures.Click Predict Button.
+                </p>
+                <p>
+                    The machine learning algorithms analyze the input features in real-time. If patterns indicative of a seizure are detected, the system triggers an Output.
+                </p>
+                <!-- <img src="s4.png" alt=""> -->
+            </div>
+        
+    </div>
+    <div id="Team" class="section2">
+        <div class="container4">
+                <h2>Contact Us</h2>
+                <p>We'd love to discuss how we can apply our approach</p>
+                <p>to improve the health of our community.  </p>
+                <p>If you have any questions or inquiries, feel free to email us:</p>
+                <button onclick="location.href='mailto:vinittavde@gmail.com';">Email Us</button>
+        </div>
+    </div>   
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const restartButton = document.querySelector(".restart-button");
+    
+            restartButton.addEventListener("click", function () {
+                // Redirect to the home page to restart the process
+                window.location.href = "/";
+            });
+        });
+    </script>  
+</body>
+</html>

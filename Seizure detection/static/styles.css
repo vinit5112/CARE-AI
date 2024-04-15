@@ -1,0 +1,239 @@
+/* body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+    
+} */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; 
+    margin: 0;
+    scroll-behavior: smooth;
+    /* justify-content : center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+}  
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid rgb(255, 252, 251); 
+    outline: 3px solid rgb(131, 85, 30);
+    outline-offset: -10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top : 470px;
+    margin-right: 178px;
+    
+}
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.upload-form input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.predict-button {
+    padding: 8px 18px;
+    background-color: #979797;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 18px;
+    font-size: 18px;
+}
+
+.predict-button:hover {
+    background-color: #08d504;
+}
+
+.result {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.restart-button {
+    margin-left: 18px;
+    padding: 8px 18px;
+    background-color: #979797;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.restart-button:hover {
+    background-color: #c0392b;
+}
+
+body{
+    background-image: url("back1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.navbar {
+    color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: -120px;
+}
+.logo:hover{
+    color: #848484;
+}
+nav {
+    text-align: center;
+    /* padding-right: 500px; */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+    position: relative;
+    letter-spacing: o.5px;
+    padding: 0 10px;
+}
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #a0a0a0;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+nav a:hover:after {
+    width: 100%;
+}
+.section1 {
+    height: 100vh;
+    margin-top: 290px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f0f0f0; */
+    background-image: url("2.png");
+}
+.container3{
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-left: 30px;
+    margin-right: 700px;
+    padding: 30px;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+.container3 h2:hover{
+    color: #434343;
+}
+.section2{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -45px;
+    background-image: url("3.png");
+    background-color: black;
+    background-repeat: no-repeat;
+
+}
+.container4{
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    position: absolute;
+    right: 290px;
+    margin-top: 405px;
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding: 5px;
+    padding-left: -3px;
+    background-color:rgb(138, 201, 220) ;
+}
+.container4 p{
+    color: #000000;
+}
+
+.container4 h2:hover{
+    color: #434343;
+}
+.container4 h2{
+    margin-left: 145px;
+}
+.container4 button{
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+    align-content: center;
+    margin-left: 170px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container4 button:hover{
+    background-color: #434343;
+}
+.container5-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.container5 h2,p{
+    color: white;
+}
+.container5{
+    margin-left: 583px;
+    margin-top:260px;
+    font-family: Arial, sans-serif;
+}
+.container5 button{
+    padding: 5px;
+    padding-left:2px;
+    background-color: #979797;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+.container5 button:hover{
+    background-color: #fff;
+}
+.container5 h2:hover{
+    color:#434343;
+}
