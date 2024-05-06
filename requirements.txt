@@ -1,0 +1,6 @@
+pickle
+flask
+sklearn
+pymysql
+pandas
+numpy
